@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>SITIOWEB</title>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+
+    
+
+</head>
+
+
+<body>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="formulario" name="formulario" class="needs-validation">
+          <div class="form-group">
+				    <label for="nombre">Nombre</label>
+				    <input type="text" class="form-control" id="nombre" aria-describedby="NameHelp" name="nombre" placeholder="Nombre">
+			    </div>
+			    <div class="form-group">
+				    <label for="fecha">Fecha de Nacimiento</label>
+				    <input type="text" class="form-control" id="fecha" name="fecha" placeholder="Fecha de Nacimiento">
+          </div>
+          <div>
+          <h7>Sexo</h7>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" name="exampleRadios1" value="mujer">
+            <label class="form-check-label" for="exampleRadios1">Femenino</label>
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" name="exampleRadios2" value="hombre">
+            <label class="form-check-label" for="exampleRadios2">Masculino</label>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">E-mail</label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="E-mail">
+          </div>
+          <button type="button" class="btn btn-outline-dark" data-dismiss="modal" aria-label="Close">Cancelar</button>
+          <button type="button" name="enviar" id="enviar" class="btn btn-success mr-2" onclick="agregarFila()">Guardar</button>
+			<!-- para eliminar fila
+			<button type="button" class="btn btn-danger" onclick="eliminarFila()">Eliminar Fila</button>
+			-->
+        </form>
+      </div>
+      <!-- botones para cerrar y guardar
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+  		-->
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+  	<br>
+    <table border="1" class="table table-responsive-sm table-bordered table-hover" id="tablaprueba">
+      <thead class="">
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Sexo</th>
+          <th>Mail</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    
+
+
+
+<br>
+
+<!-- Button trigger modal -->
+<button class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
+  Cargar Usuario
+</button>
+<br>
+
+	  
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="js/filas.js"></script>
+  <script src="js/validacion.js"></script>
+</body>
+
+</html>
+
+
+    
+
+
+    
